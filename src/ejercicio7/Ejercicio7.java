@@ -19,7 +19,7 @@ public class Ejercicio7 {
 		s = readString();
 		//2. El usuario elige el número de carácteres n de esa cadena que quiere copiar
 		System.out.println("Elige el número de carácteres de la cadena que quieres copiar:");
-		n = readInt();
+		n = readNumberInRange(0, s.length(), Limit.MIN_INCLUDED);
 		
 		//4. Se muestra la cadena resultante
 		System.out.println(concatenatorN(s, n));
